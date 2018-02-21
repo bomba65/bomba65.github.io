@@ -30,7 +30,7 @@ html, body {
 /* REUSABLE COMPONENTS */
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px 40px 0 300px;
     position: relative;
@@ -193,8 +193,10 @@ nav img {
     font-size: 80%;
     font-weight: 400;
     margin-top: 0.5%;
-    margin-left: 5%;
     line-height: 20px;
+}
+.section-two div button {
+    margin-left: 5%;
 }
 
 .section-three {
@@ -244,9 +246,8 @@ nav img {
 
 .tab-contents img {
     display: inline;
-    height: 180px;
-    float: left;
-    margin-left: 15%;
+    max-height: 180px;
+    float: right;
 }
 
 .tab-content {
