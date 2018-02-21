@@ -1,0 +1,258 @@
+/* BASIC SETUP */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    color: #000;
+    font-family: Geometria, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    line-height: 1;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* REUSABLE COMPONENTS */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 40px 0 300px;
+    position: relative;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+section {
+    border-radius: 10px;
+    padding: 5% 5% 5%;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 20px #f4eded;
+    border: 1px solid #f4eded;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADINGS */
+
+.main-heading {
+    font-size: 240%;
+}
+
+.heavy {
+    font-weight: 900;
+}
+
+.heavy-2 {
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 135%;
+    margin: 0;
+    position: relative;
+    padding: 0 40px;
+    line-height: 20px;
+}
+
+h3:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 25px;
+    height: 2px;
+    background: #F03354;
+}
+
+/* BUTTONS */
+
+.btn {
+    height: 45px;
+    min-width: 170px;
+    font-weight: 500;
+    font-size: 85%;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    height: 450px;
+    width: 240px;
+    position: fixed;
+    margin-left: -260px;
+    border-radius: 10px;
+    z-index: 999;
+    box-shadow: 0px 0px 20px #f4eded;
+    border: 1px solid #f4eded;
+    font-size: 90%;
+}
+
+nav img {
+    display: block;
+}
+
+.nav-border {
+    margin: 0 20px;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+}
+
+.nav-links li {
+    padding: 6px 20px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+.nav-links li.active {
+    color: #dc3545;
+    border-left: 2px solid #dc3545;
+    background-color: #fcfcfc;
+    padding-left: 18px;
+}
+.nav-links li:hover {
+    border-left: 2px solid #c9c9c9;
+    background-color: #fcfcfc;
+    padding-left: 18px;
+}
+.nav-links li.active:hover {
+    border-left: 2px solid #dc3545;
+}
+
+
+
+/* SECTIONS */
+
+.section-one {
+    color: #fff;
+    padding: 9rem 4rem 7rem;
+    background-image: url(img/main.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 0;
+    box-shadow: none;
+}
+
+.section-one p {
+    max-width: 470px;
+}
+.section-one p:last-child {
+    margin-top: 2.3rem;
+    line-height: 1.3rem;
+}
+
+.section-two {
+    background: url(img/pattern.png) #FBFBFB;
+    font-weight: 500;
+}
+
+.section-two ul {
+    margin-top: 40px;
+    max-height: 140px;
+}
+
+.section-two ul li {
+    padding: 5px 0;
+    display: block;
+}
+
+.section-two ul li span{
+    width: 30px;
+    display: inline-block;
+}
+
+.section-two div {
+    margin-top: 5%;
+}
+
+.section-two div p {
+    max-width: 800px;
+    font-size: 80%;
+    font-weight: 400;
+    margin-top: 0.5%;
+    margin-left: 5%;
+    line-height: 20px;
+}
+
+.section-three {
+    
+}
+
+.section-three .tab-names{
+    height: auto;
+    margin-top: 20px;
+}
+.section-three .tab-names li{
+    font-weight: 500;
+    border-bottom: 2px solid #c9c9c9;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    font-size: 90%;
+}
+.section-three .tab-names li.active {
+    border-bottom-color: #dc3545;
+}
+.section-three .tab-names li:hover {
+    border-bottom-color: #959595;
+}
+.section-three .tab-names li.active:hover {
+    border-bottom-color: #dc3545;
+}
+.section-three .tab-names li span{
+    padding: 3px;
+}
+.section-three .tab-names li img {
+    height: 1.2rem;
+    margin-right: 0.4rem;
+}
+
+.tab-contents ul {
+    float: left;
+}
+
+.tab-contents ul li:before {
+    content: "• ";
+    color: #dc3545;
+    font-size: 120%;
+    margin-right: 5px;
+    line-height: 25px;
+}
+
+.tab-contents img {
+    display: inline;
+    height: 180px;
+    float: left;
+    margin-left: 15%;
+}
+
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+

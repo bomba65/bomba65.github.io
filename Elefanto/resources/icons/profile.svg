@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="496px" height="496px" viewBox="0 0 496 496" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="profile" fill-rule="nonzero">
+            <rect id="Rectangle-path" fill="#F03354" x="64" y="152" width="344" height="312"></rect>
+            <g id="Group" fill="#333333">
+                <path d="M456,120 L40,120 C17.944,120 0,137.944 0,160 L0,456 C0,478.056 17.944,496 40,496 L456,496 C478.056,496 496,478.056 496,456 L496,160 C496,137.944 478.056,120 456,120 Z M480,456 C480,469.232 469.232,480 456,480 L40,480 C26.768,480 16,469.232 16,456 L16,160 C16,146.768 26.768,136 40,136 L456,136 C469.232,136 480,146.768 480,160 L480,456 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="32" y="256" width="16" height="64"></rect>
+                <rect id="Rectangle-path" x="32" y="352" width="16" height="16"></rect>
+                <path d="M444,284 C428.56,284 416,296.56 416,312 C416,327.44 428.56,340 444,340 C459.44,340 472,327.44 472,312 C472,296.56 459.44,284 444,284 Z M444,324 C437.384,324 432,318.616 432,312 C432,305.384 437.384,300 444,300 C450.616,300 456,305.384 456,312 C456,318.616 450.616,324 444,324 Z" id="Shape"></path>
+                <path d="M200,248 C200,230.352 185.648,216 168,216 C150.352,216 136,230.352 136,248 C136,265.648 150.352,280 168,280 C185.648,280 200,265.648 200,248 Z M168,264 C159.176,264 152,256.824 152,248 C152,239.176 159.176,232 168,232 C176.824,232 184,239.176 184,248 C184,256.824 176.824,264 168,264 Z" id="Shape"></path>
+                <path d="M168,328 C207.704,328 240,295.704 240,256 C240,216.296 207.704,184 168,184 C128.296,184 96,216.296 96,256 C96,295.704 128.296,328 168,328 Z M152.232,309.704 C153.36,301.976 159.968,296 168,296 C176.032,296 182.64,301.976 183.768,309.704 C178.76,311.176 173.48,312 168,312 C162.52,312 157.24,311.176 152.232,309.704 Z M168,200 C198.872,200 224,225.128 224,256 C224,275.616 213.832,292.888 198.52,302.888 C194.568,289.696 182.464,280 168,280 C153.536,280 141.432,289.696 137.48,302.888 C122.168,292.888 112,275.616 112,256 C112,225.128 137.128,200 168,200 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="256" y="184" width="120" height="16"></rect>
+                <rect id="Rectangle-path" x="256" y="216" width="120" height="16"></rect>
+                <rect id="Rectangle-path" x="256" y="248" width="120" height="16"></rect>
+                <rect id="Rectangle-path" x="256" y="280" width="120" height="16"></rect>
+                <rect id="Rectangle-path" x="256" y="312" width="120" height="16"></rect>
+                <path d="M240,432 L376,432 L376,344 L240,344 L240,432 Z M256,360 L360,360 L360,416 L256,416 L256,360 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="96" y="352" width="128" height="16"></rect>
+                <rect id="Rectangle-path" x="96" y="384" width="128" height="16"></rect>
+                <rect id="Rectangle-path" x="96" y="416" width="128" height="16"></rect>
+                <path d="M464,104 C481.648,104 496,89.648 496,72 C496,54.352 481.648,40 464,40 C449.128,40 436.712,50.232 433.136,64 L428,64 L428,80 L433.136,80 C436.712,93.768 449.128,104 464,104 Z M464,56 C472.824,56 480,63.176 480,72 C480,80.824 472.824,88 464,88 C455.176,88 448,80.824 448,72 C448,63.176 455.176,56 464,56 Z" id="Shape"></path>
+                <path d="M32,64 C46.872,64 59.288,53.768 62.864,40 L68,40 L68,24 L62.864,24 C59.288,10.232 46.872,0 32,0 C14.352,0 0,14.352 0,32 C0,49.648 14.352,64 32,64 Z M32,16 C40.824,16 48,23.176 48,32 C48,40.824 40.824,48 32,48 C23.176,48 16,40.824 16,32 C16,23.176 23.176,16 32,16 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="84" y="24" width="16" height="16"></rect>
+                <polygon id="Shape" points="120 44 136 44 136 24 116 24 116 40 120 40"></polygon>
+                <rect id="Rectangle-path" x="120" y="60" width="16" height="16"></rect>
+                <rect id="Rectangle-path" x="120" y="92" width="16" height="12"></rect>
+                <rect id="Rectangle-path" x="208" y="92" width="16" height="12"></rect>
+                <polygon id="Shape" points="224 80 228 80 228 64 208 64 208 84 224 84"></polygon>
+                <rect id="Rectangle-path" x="383.552" y="64" width="22.216" height="16"></rect>
+                <rect id="Rectangle-path" x="250.24" y="64" width="22.216" height="16"></rect>
+                <rect id="Rectangle-path" x="339.12" y="64" width="22.216" height="16"></rect>
+                <rect id="Rectangle-path" x="294.664" y="64" width="22.216" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
