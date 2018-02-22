@@ -35,7 +35,7 @@
 
 html, body {
     background-color: #fff;
-    color: #000;
+    color: #0F365A;
     font-family: SegoeUI, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -150,8 +150,24 @@ h3:before {
 /* NAVIGATION */
 
 nav {
-    border-bottom: 1px solid grey;
-    height: 70px;
+    padding: 20px 0;
+}
+
+nav .logo-transparent {
+    height: 20px;
+    margin: 5px 0;
+}
+
+nav ul {
+    margin: 0 auto;
+}
+nav ul li{
+    padding: 1px 20px
+}
+
+nav .icon-phone {
+    height: 18px;
+    margin: 5px px;
 }
 
 /* SECTIONS */
