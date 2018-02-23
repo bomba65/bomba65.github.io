@@ -146,7 +146,7 @@ nav {
     padding: 20px 0;
 }
 
-nav .row { display: flex; }
+nav .row { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 nav .logo-transparent {
     height: 20px;
@@ -172,8 +172,13 @@ nav .icon-phone {
 }
 
 .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -181,8 +186,11 @@ nav .icon-phone {
     width: 320px;
     padding: 25px;
     border-radius: 12px;
+    -webkit-box-shadow: 0 0 10px rgba(166, 166, 166, 0.5);
     box-shadow: 0 0 10px rgba(166, 166, 166, 0.5);
     margin: 20px 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -236,8 +244,13 @@ nav .icon-phone {
 }
 
 .feature .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -332,7 +345,11 @@ nav .icon-phone {
 
 footer { padding: 25px 0; }
 
-footer .row { display: flex; }
+footer .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 
 .logo-footer {
     height: 25px;
