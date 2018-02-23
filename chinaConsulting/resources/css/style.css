@@ -341,6 +341,82 @@ nav .icon-phone {
     display: block;
 }
 
+.map-container {
+    display: flex;
+    margin: 50px 0;
+    height: 100%;
+}
+
+.map {
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(166, 166, 166, 1);
+    width: 70%;
+    max-height: 570px;
+}
+
+    .map-mail {
+        margin: 25px 0 25px 21px;
+}
+.map-info-container {
+    position: relative;
+    z-index: 1;
+    width: 30%;
+}
+
+.map-info {
+    padding: 20px;
+    border-radius: 5px; 
+    position: relative;
+    margin-bottom: 10px;
+}
+.map-info.active {
+    border:1px solid #D1D1D1;
+}
+.map-info div {
+    color: #217DD1;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.map-info p {
+    max-width: 65%;
+    font-size: 14px;
+    margin: 0;
+}
+
+.map-info.active:before {
+    background: #D1D1D1;
+    height: calc(100% + 2px);
+    right: -26px;
+    top: -1px;
+    clip-path: polygon(0 0,75% 0,100% 50%,75% 100%,0 100%);
+    content: "";
+    display: block;
+    border-radius: 5px;
+    width: 100px;
+    position: absolute;
+}
+
+.map-info.active:after {
+    height: 100%;
+    right: -25px;
+    top: 0;
+    clip-path: polygon(0 0,75% 0,100% 50%,75% 100%,0 100%);
+    content: "";
+    display: block;
+    border-radius: 5px;
+    width: 100px;
+    position: absolute;
+    background: #fff;
+    
+}
+
+
+.qr-code {
+    height: 110px;
+    margin: 25px 0 25px 21px;
+}
+
 /* FOOTER */
 
 footer { padding: 25px 0; }
@@ -366,5 +442,4 @@ footer .row {
 footer span {
     font-size: 70%;
     padding: 5px 0;
-    width: 240px;
 }
