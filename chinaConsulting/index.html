@@ -16,35 +16,32 @@
     </head>
     <body>
         <div class="main-container">
-            <header>
-                <nav>
-                    <div class="row">
-                        <img src="./resources/img/logo-transparent.png" alt="Logo Transparent" class="logo-transparent">
-                        
-                        <ul class="d-md-flex">
-                            <li class="active">Главная</li>
-                            <li>Услуги</li>
-                            <li>Преимущества</li>
-                            <li>Отзывы</li>
-                            <li>Контакты</li>
-                        </ul>
-                        
-                        <img src="./resources/icons/phone.png" alt="Phone" class="icon-phone">
-                        <span>8 (775) 142 22 12</span>
-                    </div>
-                </nav>
-                <div class="hero-text-box">
-                    <div class="row">
-                        <img src="./resources/img/logo.png" alt="Logo" class="logo">
-                        <h1>Поиск и доставка товара из Китая</h1>
-                        <h2>Безопасность вашего товара - наш главный приоритет!</h2>
-                        <button class="btn btn-primary">Подробнее</button>
-                        <img src="./resources/icons/mouse.png" alt="Scroll Down" class="mouse-down">
-                    </div>
+            <nav>
+                <div class="row">
+                    <img src="./resources/img/logo-transparent.png" alt="Logo Transparent" class="logo-transparent">
+
+                    <ul class="d-md-flex">
+                        <li><a class="active" href="#main">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#features">Преимущества</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+
+                    <img src="./resources/icons/phone.png" alt="Phone" class="icon-phone">
+                    <span>8 (775) 142 22 12</span>
                 </div>
-            </header>
-            
-            <section class="section-services">
+            </nav>
+            <section id="main" class="section-main">
+                <div class="row">
+                    <img src="./resources/img/logo.png" alt="Logo" class="logo">
+                    <h1>Поиск и доставка товара из Китая</h1>
+                    <h2>Безопасность вашего товара - наш главный приоритет!</h2>
+                    <button class="btn btn-primary">Подробнее</button>
+                    <img src="./resources/icons/mouse.png" alt="Scroll Down" class="mouse-down">
+                </div>
+            </section>
+            <section id="services" class="section-services">
                 <div class="row">
                     <h2>Мы эксперты в таких сферах как</h2>
                     <p class="long-copy">
@@ -103,7 +100,7 @@
                 </div>
             </section>
             <div class="row"><hr></div>
-            <section class="section-features">
+            <section id="features" class="section-features">
                 <div class="row">
                     <h2>Почему нам стоит доверять</h2>
                     <p class="long-copy">
@@ -172,7 +169,7 @@
                 </div>
             </section>
             <div class="row"><hr></div>
-            <section class="section-reviews">
+            <section id="reviews" class="section-reviews">
                  <div class="row">
                     <h2>Отзывы довольных клиентов</h2>
                     <p class="long-copy">
@@ -275,7 +272,7 @@
                 </div>
             </section>
             <div class="row"><hr></div>
-            <section class="section-communicate">
+            <section id="contacts" class="section-contacts">
                 <div class="row">
                     <h2>Свяжитесь с нами в любое время</h2>
                     <p class="long-copy">
@@ -306,6 +303,9 @@
                         </div>
                         <div class="map map-almaty">
                             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af8c58e3c8bca1ad38368a0cd01cb6a2e194def2c25c951c6003a3501b6f0fc14&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                        <div class="map active map-china">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac5955127ef6688f1df515b32b886578e4ad2efbf3306981be9b318323acbd692&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
                         </div>
                     </div>
                     <button class="btn btn-primary">Свяжитесь с нами</button>
