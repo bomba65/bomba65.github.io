@@ -8,6 +8,7 @@ $(document).ready(function(){
       // Remove links that don't actually link to anything
       .not('[href="#"]')
       .not('[href="#0"]')
+    .not('[href="#carouselExampleIndicators"]')
       .click(function(event) {
         // On-page links
         if (
@@ -44,6 +45,20 @@ $(document).ready(function(){
             icon.removeClass('ion-close-round');
         }
     })
+    
+    /* Map */
+    $(".js--map-pekin").click(function(){
+        $(".map-info:first").addClass("active");
+        $(".map-info:last").removeClass("active");
+        $(".map:first").addClass("active");
+        $(".map:last").removeClass("active");
+    });
+    $(".js--map-almaty").click(function(){
+        $(".map-info:first").removeClass("active");
+        $(".map-info:last").addClass("active");
+        $(".map:first").removeClass("active");
+        $(".map:last").addClass("active");
+    });
 });
 
 var hero

@@ -15,6 +15,57 @@
     .section-services { padding-bottom: 40px; }
 }
 
+@media only screen and (max-width: 940px) {
+    .map-container {
+        display: block;
+    }
+    .map {
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(166, 166, 166, 1);
+        width: 100%;
+        height: 500px;
+        display: none;
+    }
+    .map-info-container { }
+    .inner-info-container {
+        top: 220px;
+        left: 20px;
+        position: absolute;
+        z-index: 999;
+    }
+    .map-info {
+        position: static;
+        float: left;
+        padding: 0;
+    }
+    .map-info div {
+        background-color: lightgrey;
+        margin: 0;
+        padding: 10px;
+        position: relative;
+    }
+    .map-info.active div {
+        background-color: #fff;
+    }
+    .map-info p {
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        padding: 5px 40px 10px 10px;
+        left: 0;
+    }
+    .map-info.active p{
+        display: block;
+    }
+    .map-info.active {
+        border: 0;
+    }
+    .map-info.active:before, .map-info.active:after {
+        content: none;
+    }
+    
+    .qr-code {display: none;}
+}
 
 /* Small phones to small tablets: from 481px to 767px */
 
@@ -51,13 +102,42 @@
     }
     
     nav hr { display: block; }
+    
+    footer .row {
+        display: block;
+    }
+    footer {
+        text-align: center;
+    }
+    .social-icons { margin: 15px;}
+    .logo-footer { margin-right: 0;}
 }
 
 @media only screen and (max-width: 575px) {
+    .quote-sign img { display: none;}
 
+    .quote-sign hr { display: none;}
+    .persons-review { font-size: 90%; }
+
+    .persons-img { margin-top: 20px; }
 }
 
 /* Small phones: from 0 to 480px */
 
 @media only screen and (max-width: 480px) {
+    h1 { font-size: 180%; }
+    h2 { font-size: 130%; }
+    .feature .row {
+        display: block;
+        text-align: center;
+    }
+    .feature img { margin-bottom: 30px;}
+    .feature.grey img { 
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    .feature .row div {margin-left: 0;}
+    .feature.grey .row div {margin-right: 0;}
+    
+    .section-features button { padding-left: 10px; padding-right: 10px;}
 }  
