@@ -84,11 +84,11 @@ a {
 }
 
 a.active {
-    color: #007bff;
+    color: #217DD1;
 }
 
 a:hover {
-    color: #007bff;
+    color: #217DD1;
     text-decoration: none;
 }
 
@@ -114,7 +114,7 @@ h1 {
 }
 
 h2 {
-    font-size: 155%;
+    font-size: 150%;
     font-weight: normal;
     text-align: center;
 }
@@ -147,6 +147,11 @@ nav {
 
 nav .row { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
+.nav-body { 
+    display: flex;
+    flex: auto;
+}
+
 nav .logo-transparent {
     height: 20px;
     margin: 5px 0;
@@ -162,6 +167,20 @@ nav ul li{
 nav .icon-phone {
     height: 18px;
     margin: 5px 8px;
+}
+
+nav hr { display: none; }
+
+/* MOBILE NAVI */
+
+.mobile-nav-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 130%;
+    color: #0F365A;
 }
 
 /* SECTIONS */
@@ -201,7 +220,7 @@ nav .icon-phone {
 
 
 .section-services {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .services {
