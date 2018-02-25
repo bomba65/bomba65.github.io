@@ -80,7 +80,7 @@ hr { margin: 0; }
 
 a {
     color: #0F365A;
-    transition: color 0.2s;
+    transition: color 0.5s;
 }
 
 a.active {
@@ -189,7 +189,7 @@ nav hr { display: none; }
     color: #fff;
     padding: 50px 0;
     text-align: center;
-    background-image: url(./img/china_map.png), url(./img/bg_main.png);
+    background-image: url(./img/china_map.png), url(./img/bg_main.jpg);
     background-position: center;
     background-size: 800px, cover;
     background-repeat: no-repeat;
@@ -500,4 +500,28 @@ footer .row {
 footer span {
     font-size: 70%;
     padding: 5px 0;
+}
+
+/* Animation */
+
+.section-main .row, .section-features .feature {
+    opacity: 0;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.section-services .services, .section-reviews .carousel {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.map-container { 
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+.section-main .row.animated, .section-services .services.animated,
+.section-features .feature.animated, .section-reviews .carousel.animated {
+    opacity: 1;
 }

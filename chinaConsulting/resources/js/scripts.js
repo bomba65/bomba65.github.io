@@ -59,6 +59,39 @@ $(document).ready(function(){
         $(".map:first").removeClass("active");
         $(".map:last").addClass("active");
     });
+    
+    /* Animations on scroll */
+    
+    $('.section-main .row').waypoint(function() {
+        $('.section-main .row').addClass('animated zoomIn');
+    }, {
+        offset: '50%'
+    });
+    
+    $('.section-services .services').waypoint(function() {
+        $('.section-services .services').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    });
+    
+    $('.section-features .feature').waypoint(function() {
+        $('.section-features .feature').addClass('animated zoomIn');
+    }, {
+        offset: '50%'
+    });
+    
+    $('.section-reviews .carousel').waypoint(function() {
+        $('.section-reviews .carousel').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    });
+    
+    $('.map-container').waypoint(function() {
+        $('.map-container').addClass('animated pulse');
+    }, {
+        offset: '50%'
+    });
+    
 });
 
 var hero

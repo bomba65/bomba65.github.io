@@ -149,4 +149,9 @@
         text-align: center;
         margin-left: 0;
     }
+    
+    .inner-info-container {
+        top: 60px;
+        left: 10px;
+    }
 }  
