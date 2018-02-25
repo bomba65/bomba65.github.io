@@ -107,6 +107,13 @@
     
     nav hr { display: block; }
     
+    nav .icon-phone {
+        height: 15px;
+        margin: 5px 8px;
+    }
+    
+    .nav-body div a { font-size: 15px;}
+    
     footer .row {
         display: block;
     }
@@ -124,7 +131,7 @@
     .persons-review { font-size: 90%; }
 
     .persons-img { margin-top: 20px; }
-    .map { height: 380px; }
+    .map { height: 400px; }
 }
 
 /* Small phones: from 0 to 480px */
