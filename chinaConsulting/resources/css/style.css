@@ -516,6 +516,7 @@ footer span {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     cursor: pointer;
     display: none;
+    padding: 0 5px;
 }
 
 .popup-container {
@@ -558,6 +559,15 @@ footer span {
 .popup-container button {
     margin: 20px auto 0;
 }
+
+.popup-container span {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.popup-container span i { height: 25px; }
 
 
 /* Animation */

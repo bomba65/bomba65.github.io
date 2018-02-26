@@ -53,6 +53,8 @@
         background-color: #fff;
         padding: 5px 40px 10px 10px;
         left: 0;
+        width: 100%;
+        font-size: 80%;
     }
     .map-info.active p{
         display: block;
