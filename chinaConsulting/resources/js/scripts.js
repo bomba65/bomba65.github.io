@@ -47,13 +47,13 @@ $(document).ready(function(){
     })
     
     /* Map */
-    $(".js--map-pekin").click(function(){
+    $(".js--map-almaty").click(function(){
         $(".map-info:first").addClass("active");
         $(".map-info:last").removeClass("active");
         $(".map:first").addClass("active");
         $(".map:last").removeClass("active");
     });
-    $(".js--map-almaty").click(function(){
+    $(".js--map-pekin").click(function(){
         $(".map-info:first").removeClass("active");
         $(".map-info:last").addClass("active");
         $(".map:first").removeClass("active");
@@ -125,3 +125,28 @@ $(window).on("resize", function () {
         $('.js--nav-icon i').removeClass('ion-close-round');
     }
 }).resize();
+
+
+
+// Get the modal
+var modal = document.getElementById('mainModal');
+
+// Get the button that opens the modal
+var btn2 = document.getElementById("showModal-2");
+var btn3 = document.getElementById("showModal-3");
+
+// When the user clicks the button, open the modal 
+
+btn2.onclick = function() {
+    modal.style.display = "block";
+}
+btn3.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
