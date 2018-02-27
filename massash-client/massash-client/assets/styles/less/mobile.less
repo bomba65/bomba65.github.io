@@ -1,0 +1,378 @@
+// out: ../css/mobile.css
+
+@media (max-width: 768px) {
+    body {
+        &.active {
+            overflow: hidden;
+        }
+    }
+
+    .header {
+        padding: 0;
+        height: 60px;
+
+        .col-3 {
+            display: block;
+            margin: 0 !important;
+            width: 100% !important;
+
+            ul {
+                text-align: left;
+
+                li {
+                    width: 100%;
+                    display: block;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+            img {
+                height: 23px;
+                padding: 18.5px 0;
+            }
+
+            &:first-child {
+                position: relative;
+
+                button {
+                    top: 0;
+                    right: 0;
+                    display: block;
+                    padding: 30px 0;
+                    position: absolute;
+                    background-color: transparent;
+
+                    &.active {
+                        background-size: auto 12px;
+                        background-image: url('../../images/icons/close.png');
+                    }
+                }
+            }
+
+            &:nth-child(2),
+            &:last-child {
+                display: none;
+            }
+            &:last-child {
+                padding-top: 20px;
+                margin-top: 20px !important;
+                border-top: 1px solid #F3F3F3;
+            }
+        }
+
+        &.active {
+            height: 100%;
+
+            .col-3 {
+                display: block;
+            }
+        }
+    }
+
+    .content {
+        margin: 60px 0 0;
+        
+        .row {
+            &.advertising {
+                height: auto;
+                background-position: -200px center;
+
+                .col-1 {
+                    max-width: 100%;
+
+                    .row:first-child {
+                        height: 300px;
+
+                        .tagline {
+                            p {
+                                font-size: 20px;
+                            }
+                            h1 {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .row:last-child {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 0;
+                        padding: 40px 20px;
+
+                        .col-2 {
+                            display: block;
+                            width: 100% !important;
+                            text-align: center !important;
+
+                            &:first-child {
+                                margin: 0 0 20px 0;
+                            }
+                            &:last-child {
+                                button {
+                                    width: 100%;
+                                    max-width: 160px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.article {
+                padding: 0 0 40px 0;
+
+                .container > .row {
+                    &:first-child {
+                        margin: 0;
+
+                        .col-2 {
+                            margin: 0;
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+
+                            p {
+                                font-size: 14px;
+                            }
+                            h2 {
+                                font-size: 18px;
+                            }
+
+                            &:last-child {
+                                display: none;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+
+            &.effect {
+                .row {
+                    p {
+                        font-size: 16px;
+                    }
+                    h2 {
+                        font-size: 20px;
+                        margin-bottom: 35px;
+                    }
+
+                    > .row {
+                        margin-bottom: 15px;
+
+                        > .col-3 {
+                            padding: 0;
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+                            margin-bottom: 15px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-top: 35px;
+                    }
+                }
+            }
+
+            &.services {
+                padding: 50px 0;
+
+                .container {
+                    > .row {
+                        h2 {
+                            font-size: 20px;
+                            margin-bottom: 35px;
+                            line-height: initial;
+                        }
+
+                        > .row {
+                            display: none;
+                            margin: 0 0 20px;
+
+                            .col-2 {
+                                width: 100%;
+                                display: block;
+                                margin: 0 0 20px 0;
+
+                                .card {
+                                    width: 100%;
+                                    height: auto;
+
+                                    .col-2 {
+                                        display: block;
+                                        margin: 0 !important;
+                                        width: 100% !important;
+
+                                        p {
+                                            margin-bottom: 20px;
+                                        }
+                                        ul {
+                                            height: 20px;
+                                            width: 100% !important;
+                                            position: initial !important;
+                                        }
+
+                                        &:first-child {
+                                            height: 180px;
+                                            overflow: hidden;
+                                            position: relative;
+
+                                            img {
+                                                left: 0;
+                                                bottom: 0;
+                                                position: absolute;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:first-child {
+                                display: block;
+                            }
+                        }
+
+                        &:last-child {
+                            display: block;
+                        }
+                    }
+                }
+
+                &.active {
+                    .container > .row {
+                        > .row {
+                            display: block;
+                        }
+
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            &.reviews {
+                .row {
+                    p {
+                        padding: 0 !important;
+                        font-size: 14px !important;
+                        background-image: none !important;
+                    }
+                    h2 {
+                        font-size: 20px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+
+                    &:first-child {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+
+            &.certificates {
+                padding: 50px 0 30px 0;
+
+                .row {
+                    h2 {
+                        font-size: 20px;
+                        margin-bottom: 35px;
+                    }
+
+                    &:last-child {
+                        .col-4 {
+                            margin: 0 20px 20px 0;
+                            width: calc(~"50% - 10px");
+
+                            &:nth-child(2n) {
+                                margin: 0 0 20px 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.contacts {
+                margin: 0;
+                padding: 50px 0;
+
+                .container {
+                    > .row {
+                        > .col-3 {
+                            width: 100%;
+                            display: block;
+                            margin: 0 0 50px 0;
+                            text-align: center;
+
+                            ul {
+                                li {
+                                    a {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+
+                        &:first-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding: 45px 0;
+
+        .row {
+            .col-3 {
+                display: block;
+                margin: 0 0 20px;
+                width: 100% !important;
+                text-align: center !important;
+
+                img {
+                    height: 22px;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .popup {
+        > .row {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+
+            .group {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .container {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}

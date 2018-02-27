@@ -1,0 +1,275 @@
+@media (max-width: 768px) {
+  body.active {
+    overflow: hidden;
+  }
+  .header {
+    padding: 0;
+    height: 60px;
+  }
+  .header .col-3 {
+    display: block;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .header .col-3 ul {
+    text-align: left;
+  }
+  .header .col-3 ul li {
+    width: 100%;
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .header .col-3 img {
+    height: 23px;
+    padding: 18.5px 0;
+  }
+  .header .col-3:first-child {
+    position: relative;
+  }
+  .header .col-3:first-child button {
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 30px 0;
+    position: absolute;
+    background-color: transparent;
+  }
+  .header .col-3:first-child button.active {
+    background-size: auto 12px;
+    background-image: url('../../images/icons/close.png');
+  }
+  .header .col-3:nth-child(2),
+  .header .col-3:last-child {
+    display: none;
+  }
+  .header .col-3:last-child {
+    padding-top: 20px;
+    margin-top: 20px !important;
+    border-top: 1px solid #F3F3F3;
+  }
+  .header.active {
+    height: 100%;
+  }
+  .header.active .col-3 {
+    display: block;
+  }
+  .content {
+    margin: 60px 0 0;
+  }
+  .content .row.advertising {
+    height: auto;
+    background-position: -200px center;
+  }
+  .content .row.advertising .col-1 {
+    max-width: 100%;
+  }
+  .content .row.advertising .col-1 .row:first-child {
+    height: 300px;
+  }
+  .content .row.advertising .col-1 .row:first-child .tagline p {
+    font-size: 20px;
+  }
+  .content .row.advertising .col-1 .row:first-child .tagline h1 {
+    font-size: 20px;
+  }
+  .content .row.advertising .col-1 .row:last-child {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    padding: 40px 20px;
+  }
+  .content .row.advertising .col-1 .row:last-child .col-2 {
+    display: block;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .content .row.advertising .col-1 .row:last-child .col-2:first-child {
+    margin: 0 0 20px 0;
+  }
+  .content .row.advertising .col-1 .row:last-child .col-2:last-child button {
+    width: 100%;
+    max-width: 160px;
+    display: inline-block;
+  }
+  .content .row.article {
+    padding: 0 0 40px 0;
+  }
+  .content .row.article .container > .row:first-child {
+    margin: 0;
+  }
+  .content .row.article .container > .row:first-child .col-2 {
+    margin: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .content .row.article .container > .row:first-child .col-2 p {
+    font-size: 14px;
+  }
+  .content .row.article .container > .row:first-child .col-2 h2 {
+    font-size: 18px;
+  }
+  .content .row.article .container > .row:first-child .col-2:last-child {
+    display: none;
+  }
+  .content .row.article .container > .row:last-child {
+    display: none;
+  }
+  .content .row.effect .row p {
+    font-size: 16px;
+  }
+  .content .row.effect .row h2 {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+  .content .row.effect .row > .row {
+    margin-bottom: 15px;
+  }
+  .content .row.effect .row > .row > .col-3 {
+    padding: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .content .row.effect .row > .row > .col-3:last-child {
+    margin: 0;
+  }
+  .content .row.effect .row > .row:last-child {
+    margin: 0;
+  }
+  .content .row.effect .row:last-child {
+    margin-top: 35px;
+  }
+  .content .row.services {
+    padding: 50px 0;
+  }
+  .content .row.services .container > .row h2 {
+    font-size: 20px;
+    margin-bottom: 35px;
+    line-height: initial;
+  }
+  .content .row.services .container > .row > .row {
+    display: none;
+    margin: 0 0 20px;
+  }
+  .content .row.services .container > .row > .row .col-2 {
+    width: 100%;
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .content .row.services .container > .row > .row .col-2 .card {
+    width: 100%;
+    height: auto;
+  }
+  .content .row.services .container > .row > .row .col-2 .card .col-2 {
+    display: block;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .content .row.services .container > .row > .row .col-2 .card .col-2 p {
+    margin-bottom: 20px;
+  }
+  .content .row.services .container > .row > .row .col-2 .card .col-2 ul {
+    height: 20px;
+    width: 100% !important;
+    position: initial !important;
+  }
+  .content .row.services .container > .row > .row .col-2 .card .col-2:first-child {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+  }
+  .content .row.services .container > .row > .row .col-2 .card .col-2:first-child img {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  .content .row.services .container > .row > .row:first-child {
+    display: block;
+  }
+  .content .row.services .container > .row:last-child {
+    display: block;
+  }
+  .content .row.services.active .container > .row > .row {
+    display: block;
+  }
+  .content .row.services.active .container > .row:last-child {
+    display: none;
+  }
+  .content .row.reviews .row p {
+    padding: 0 !important;
+    font-size: 14px !important;
+    background-image: none !important;
+  }
+  .content .row.reviews .row h2 {
+    font-size: 20px;
+  }
+  .content .row.reviews .row span {
+    font-size: 14px;
+  }
+  .content .row.reviews .row:first-child {
+    margin-bottom: 30px;
+  }
+  .content .row.certificates {
+    padding: 50px 0 30px 0;
+  }
+  .content .row.certificates .row h2 {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+  .content .row.certificates .row:last-child .col-4 {
+    margin: 0 20px 20px 0;
+    width: calc(50% - 10px);
+  }
+  .content .row.certificates .row:last-child .col-4:nth-child(2n) {
+    margin: 0 0 20px 0;
+  }
+  .content .row.contacts {
+    margin: 0;
+    padding: 50px 0;
+  }
+  .content .row.contacts .container > .row > .col-3 {
+    width: 100%;
+    display: block;
+    margin: 0 0 50px 0;
+    text-align: center;
+  }
+  .content .row.contacts .container > .row > .col-3 ul li a {
+    display: inline-block;
+  }
+  .content .row.contacts .container > .row > .col-3:last-child {
+    margin: 0;
+  }
+  .content .row.contacts .container > .row:first-child {
+    display: none;
+  }
+  .footer {
+    padding: 45px 0;
+  }
+  .footer .row .col-3 {
+    display: block;
+    margin: 0 0 20px;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .footer .row .col-3 img {
+    height: 22px;
+  }
+  .footer .row .col-3:last-child {
+    margin: 0;
+  }
+  .popup > .row {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .popup > .row .group {
+    width: 100% !important;
+  }
+  .container {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}

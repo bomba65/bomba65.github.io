@@ -1,0 +1,63 @@
+html,
+body,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #FFF;
+  font-family: 'Proxima Nova', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+li {
+  list-style: none;
+}
+.row {
+  display: block;
+}
+.col {
+  vertical-align: top;
+  display: inline-block;
+}
+.col-1 {
+  width: 100%;
+}
+.col-2 {
+  width: calc(50%);
+}
+.col-3 {
+  width: calc(33.33333333%);
+}
+.col-4 {
+  width: calc(25%);
+}
+.col-5 {
+  width: calc(20%);
+}
+.col.left {
+  text-align: left;
+}
+.col.right {
+  text-align: right;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1240px;
+}
