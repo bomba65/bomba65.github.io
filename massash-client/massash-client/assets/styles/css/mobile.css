@@ -219,11 +219,11 @@
     font-size: 20px;
     margin-bottom: 35px;
   }
-  .content .row.certificates .row:last-child .col-4 {
+  .content .row.certificates .row:last-child .col-2 {
     margin: 0 20px 20px 0;
     width: calc(50% - 10px);
   }
-  .content .row.certificates .row:last-child .col-4:nth-child(2n) {
+  .content .row.certificates .row:last-child .col-:nth-child(2n) {
     margin: 0 0 20px 0;
   }
   .content .row.contacts {

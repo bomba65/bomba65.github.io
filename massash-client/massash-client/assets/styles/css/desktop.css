@@ -376,7 +376,9 @@
 }
 .content .row.services .container > .row > .row > .col-2 .card .col-2:last-child ul li:last-child {
   margin: 0;
-  background-image: url('../../images/icons/price.png');
+  background-image: url('../../images/icons/tenge.svg');
+    background-size: 40px;
+    background-position: -10px;
 }
 .content .row.services .container > .row > .row > .col-2 .card:hover {
   box-shadow: 0 0 20px #91BBEC;
@@ -509,24 +511,28 @@
 .content .row.certificates .row {
   font-size: 0;
   text-align: center;
+    display: flex;
 }
 .content .row.certificates .row h2 {
   color: #0F365A;
   font-size: 30px;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
+    
 }
 .content .row.certificates .row img {
   width: 100%;
+    border-radius: 20px;
 }
-.content .row.certificates .row .col-4 {
-  width: 210px;
-  margin-right: 60px;
+.content .row.certificates .row .col-2 {
+  max-width: 410px;
+  border-radius: 12px;
+    margin: 0 auto;
 }
-.content .row.certificates .row .col-4 a {
+.content .row.certificates .row .col-2 a {
   display: block;
   position: relative;
 }
-.content .row.certificates .row .col-4 a::after {
+.content .row.certificates .row .col-2 a::after {
   top: 0;
   left: 0;
   width: 100%;
@@ -540,11 +546,11 @@
   background-color: rgba(74, 144, 226, 0.5);
   background-image: url('../../images/icons/magnifier.png');
 }
-.content .row.certificates .row .col-4 a:hover::after {
+.content .row.certificates .row .col-2 a:hover::after {
   display: block;
 }
-.content .row.certificates .row .col-4:last-child {
-  margin: 0;
+.content .row.certificates .row .col-2:last-child {
+  
 }
 .content .row.contacts {
   padding: 80px 0;

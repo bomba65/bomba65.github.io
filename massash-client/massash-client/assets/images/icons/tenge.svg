@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>kazakhstani-tenge</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.5%" y="-6.2%" width="105.0%" height="112.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.883131378   0 0 0 0 0.883131378   0 0 0 0 0.883131378  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-1122.000000, -3555.000000)" fill="#0F365A" fill-rule="nonzero">
+            <g id="Group-17-Copy" transform="translate(100.000000, 3379.000000)">
+                <g id="Post-Card-#7-Copy" filter="url(#filter-1)" transform="translate(640.000000, 0.000000)">
+                    <g id="Group-16" transform="translate(251.000000, 35.000000)">
+                        <g id="Group-14" transform="translate(0.000000, 150.000000)">
+                            <g id="Group-7" transform="translate(141.000000, 1.000000)">
+                                <g id="kazakhstani-tenge">
+                                    <path d="M10,0 C4.486,0 0,4.486 0,10 C0,15.514 4.486,20 10,20 C15.514,20 20,15.514 20,10 C20,4.486 15.514,0 10,0 Z M10,19.0909091 C4.98727273,19.0909091 0.909090909,15.0127273 0.909090909,10 C0.909090909,4.98727273 4.98727273,0.909090909 10,0.909090909 C15.0127273,0.909090909 19.0909091,4.98727273 19.0909091,10 C19.0909091,15.0127273 15.0127273,19.0909091 10,19.0909091 Z" id="Shape"></path>
+                                    <path d="M10,1.77272727 C5.46345455,1.77272727 1.77272727,5.46345455 1.77272727,10 C1.77272727,14.5365455 5.46345455,18.2272727 10,18.2272727 C14.5365455,18.2272727 18.2272727,14.5365455 18.2272727,10 C18.2272727,5.46345455 14.5365455,1.77272727 10,1.77272727 Z M10,17.9545455 C5.61381818,17.9545455 2.04545455,14.3861818 2.04545455,10 C2.04545455,5.61381818 5.61381818,2.04545455 10,2.04545455 C14.3861818,2.04545455 17.9545455,5.61381818 17.9545455,10 C17.9545455,14.3861818 14.3861818,17.9545455 10,17.9545455 Z" id="Shape"></path>
+                                    <polygon id="Shape" points="6.19254545 6.94545455 9.45454545 6.94545455 9.45454545 7.56381818 6.19254545 7.56381818 6.19254545 8.65472727 9.45454545 8.65472727 9.45454545 13.6 8.81818182 13.6 8.81818182 14.6909091 11.1818182 14.6909091 11.1818182 13.6 10.5454545 13.6 10.5454545 8.65472727 13.8074545 8.65472727 13.8074545 7.56381818 10.5454545 7.56381818 10.5454545 6.94545455 13.8074545 6.94545455 13.8074545 5.85454545 6.19254545 5.85454545"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
