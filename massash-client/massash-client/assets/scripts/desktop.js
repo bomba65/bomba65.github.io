@@ -37,7 +37,11 @@ $(document).ready(function() {
         // Anchor
         var anchor = $(this).attr('href');
         var top = $(anchor).offset().top;
-
+        
+        $('#menu').toggleClass('active');
+        $('.header').toggleClass('active');
+        $('body').toggleClass('active');
+        
         $('body, html').animate({
             scrollTop: top - 100
         }, 800)

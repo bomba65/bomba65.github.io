@@ -23,6 +23,13 @@
   display: block;
   text-decoration: none;
 }
+.header .col-3 a.whatsup {
+  padding-left: 20px;
+  background-size: 13px auto;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-image: url('../../images/icons/whatsapp-logo.svg');
+}
 .header .col-3 a.phone {
   padding-left: 20px;
   background-size: 10px auto;
