@@ -460,6 +460,14 @@
   color: #0F365A;
   font-size: 18px;
 }
+
+.content .row.reviews .row:last-child > .row:first-child .slider .slide .author a {
+    color: #0F365A;
+    text-decoration: none;
+}
+.content .row.reviews .row:last-child > .row:first-child .slider .slide .author a:hover {
+    text-decoration: underline;
+}
 .content .row.reviews .row:last-child > .row:first-child .slider .slide .author h3 span {
   color: #71889C;
   display: block;
