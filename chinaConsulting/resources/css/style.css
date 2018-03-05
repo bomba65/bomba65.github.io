@@ -247,6 +247,7 @@ nav hr { display: none; }
 }
 
 .service img {
+    height: 60px;
     margin-bottom: 20px;
 }
 
