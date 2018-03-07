@@ -61,7 +61,7 @@ $(document).ready(function(){
 
 var hero
     , sections = $('section')
-    , nav = $('nav')
+    , nav = $('.nav-sticky')
     , nav_height = nav.outerHeight();
 
 $(window).on('scroll', function () {

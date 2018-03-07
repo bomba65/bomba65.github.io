@@ -219,7 +219,7 @@ nav .nav-body ul li, nav .nav-sticky ul li{
     margin: 0 20px;
 }
 
-nav .nav-body ul li a:hover, nav .nav-stickyul li:hover {
+nav .nav-body ul li a:hover, nav .nav-sticky ul li a:hover {
     color: #F79016;
 }
 
@@ -229,7 +229,7 @@ nav .nav-body ul li a:hover, nav .nav-stickyul li:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.98);
     z-index: 9999;
     display: none;
 }
