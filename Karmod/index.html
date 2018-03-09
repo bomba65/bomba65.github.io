@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="./vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">
-        <title>China Consulting</title>
+        <title>Blocks</title>
         
         <link rel="apple-touch-icon" sizes="120x120" href="./resources/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
@@ -48,21 +48,14 @@
                             <img class="social-icon" src="./resources/icons/social.inst.svg" alt="Instagram">
                             <img class="social-icon" src="./resources/icons/social.vk.svg" alt="VK">
                         </div>
+                        <a class="mobile-nav-icon js--nav-icon">
+                            <i class="ion-navicon-round"></i>
+                        </a>
                     </div>
                     
-                    <div class="row"><hr></div>
+                    <hr>
                     
-                    <div class="nav-body">
-                        <ul class="d-md-flex">
-                            <li><a class="active" href="#section-main">Главная</a></li>
-                            <li><a href="#section-product">О продукций</a></li>
-                            <li><a href="#section-features">Преимущества</a></li>
-                            <li><a href="#section-gallery">Галерея</a></li>
-                            <li><a href="#section-reviews">Отзывы</a></li>
-                            <li><a href="#section-contacts">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav-sticky">
+                    <div class="nav-body js--nav-body">
                         <ul class="d-md-flex">
                             <li><a class="active" href="#section-main">Главная</a></li>
                             <li><a href="#section-product">О продукций</a></li>
@@ -78,7 +71,7 @@
                 <div class="row">
                     <h1>Быстровозводмые сборные киоски и павильоны</h1>
                     <p>Ориентирован на климат Казахстана. Устойчивые. Огнеопасные.</p>
-                    <a href="#services" class="btn btn-primary" role="button">Узнать подробнее</a>
+                    <a href="#section-product" class="btn" role="button">Узнать подробнее</a>
                 </div>
             </section>
             
@@ -89,7 +82,7 @@
                         <p>
                             Наша система дополнительных пакетов и гибкая ежемесячная оплата позволяют смотреть только то, что вам действительно интересно!    
                         </p>
-                        <button class="btn btn-primary btn-transparent">Ознакомиться с продукцией</button>
+                        <a href="./resources/data/kp_blocks.pdf" class="btn btn-transparent" role="button" target="_blank">Ознакомиться с продукцией</a>
                         
                         <p>Подробнее узнать о <span>Технических характеристиках</span></p>
                     </div>
@@ -179,7 +172,7 @@
             <section id="section-reviews" class="section-reviews">
                 <div class="row">
                     <h2>Благодарности наших клиентов</h2>
-                    <div class="reviews">
+                    <div class="reviews large-screen">
                         <div class="review clearfix">
                             <p class="persons-review">
                                 Скординировать транспортировку большего груза можно несколькими способами и все они представлены в Китай-Консалтинг. Организация осуществляет грузоперевозки на любые расстояния.
@@ -212,6 +205,66 @@
                              <p class="persons-name">Андрей Ковальчук</p>
                              <p class="persons-city">г. Алматы, Казахстан</p>
                         </div>
+                    </div>
+                    <div class="reviews small-screen">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                             <ol class="carousel-indicators">
+                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                             </ol>
+                             <div class="carousel-inner" role="listbox">
+                                 <div class="carousel-item active">
+                                     <div class="review clearfix">
+                                        <p class="persons-review">
+                                            Скординировать транспортировку большего груза можно несколькими способами и все они представлены в Китай-Консалтинг. Организация осуществляет грузоперевозки на любые расстояния.
+                                         </p>
+                                         <img class="persons-img" src="./resources/img/picture.png" alt="Picture">
+                                         <p class="persons-name">Андрей Ковальчук</p>
+                                         <p class="persons-city">г. Алматы, Казахстан</p>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                     <div class="review clearfix">
+                                        <p class="persons-review">
+                                            Скординировать транспортировку большего груза можно несколькими способами и все они представлены в Китай-Консалтинг. Организация осуществляет грузоперевозки на любые расстояния.
+                                         </p>
+                                         <img class="persons-img" src="./resources/img/picture.png" alt="Picture">
+                                         <p class="persons-name">Андрей Ковальчук</p>
+                                         <p class="persons-city">г. Алматы, Казахстан</p>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                     <div class="review clearfix">
+                                        <p class="persons-review">
+                                            Скординировать транспортировку большего груза можно несколькими способами и все они представлены в Китай-Консалтинг. Организация осуществляет грузоперевозки на любые расстояния.
+                                         </p>
+                                         <img class="persons-img" src="./resources/img/picture.png" alt="Picture">
+                                         <p class="persons-name">Андрей Ковальчук</p>
+                                         <p class="persons-city">г. Алматы, Казахстан</p>
+                                    </div>
+                                 </div>
+                                 <div class="carousel-item">
+                                     <div class="review clearfix">
+                                        <p class="persons-review">
+                                            Скординировать транспортировку большего груза можно несколькими способами и все они представлены в Китай-Консалтинг. Организация осуществляет грузоперевозки на любые расстояния.
+                                         </p>
+                                         <img class="persons-img" src="./resources/img/picture.png" alt="Picture">
+                                         <p class="persons-name">Андрей Ковальчук</p>
+                                         <p class="persons-city">г. Алматы, Казахстан</p>
+                                    </div>
+                                 </div>
+                             </div>
+                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                 <span class="sr-only">Previous</span>
+                             </a>
+                             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                 <span class="sr-only">Next</span>
+                             </a>
+                         </div>
                     </div>
                 </div>
             </section>
@@ -259,21 +312,20 @@
                         
                         <p id="discount-counter"></p>
                     </div>
-                    
-                    <div class="form">
-                        <form action="sendToEmail.php" method="POST">
-                            <label>Ваше имя</label>
-                            <input type="text" placeholder="Александра" name="name" required>
-                            
-                            <label>Адрес почты</label>
-                            <input type="email" placeholder="example@gmail.com" name="phoneNumber" required>
-                            
-                            <label>Номер телефона</label>
-                            <input type="tel" placeholder="+7 (777) 777-77-77" name="phoneNumber" required>
-                            
-                            <button type="submit" name="submit" value="Submit" class="btn btn-primary">Отправить заявку</button>
-                        </form>
-                    </div>
+                </div>
+                <div class="form">
+                    <form action="sendToEmail.php" method="POST">
+                        <label>Ваше имя</label>
+                        <input type="text" placeholder="Александра" name="name" required>
+
+                        <label>Адрес почты</label>
+                        <input type="email" placeholder="example@gmail.com" name="phoneNumber" required>
+
+                        <label>Номер телефона</label>
+                        <input type="tel" placeholder="+7 (777) 777-77-77" name="phoneNumber" required>
+
+                        <button type="submit" name="submit" value="Submit" class="btn btn-primary">Отправить заявку</button>
+                    </form>
                 </div>
             </section>
             

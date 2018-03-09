@@ -1,139 +1,144 @@
 /* Big tablet to 1200px (widths smaller taht the 1140px row) */
 
 @media only screen and (max-width: 1200px) {
-    .row { padding: 0 10px; }
+    .row { padding: 0 2%; }
+}
+
+@media only screen and (min-width: 1400px) {
+    .section-feedback .form {
+        right: 15%;
+    }
 }
 
 
 /* Small tablet to big tablets: from 768px to 1023px */
 
 @media only screen and (max-width: 1023px) {
-    html, body { font-size: 16px; }
-    nav .logo-transparent { display: none; }
-    nav ul { margin: 0 auto 0 0; }
+    nav .social-icon:nth-of-type(2) {
+        margin: 5px 5px;
+    }
     section { padding: 60px 0; }
     .section-services { padding-bottom: 40px; }
-}
-
-@media only screen and (max-width: 940px) {
-    .map-container {
-        display: block;
-    }
-    .map {
-        border-radius: 12px;
-        box-shadow: 0 0 10px rgba(166, 166, 166, 1);
-        width: 100%;
-        height: 500px;
-        display: none;
-    }
-    .map-info-container { }
-    .inner-info-container {
-        top: 100px;
-        left: 50px;
-        position: absolute;
-        z-index: 999;
-    }
-    .map-info {
-        position: static;
-        float: left;
-        padding: 0;
-    }
-    .map-info div {
-        background-color: lightgrey;
-        margin: 0;
-        padding: 10px;
-        position: relative;
-    }
-    .map-info.active div {
-        background-color: #fff;
-    }
-    .map-info p {
-        position: absolute;
-        display: none;
-        background-color: #fff;
-        padding: 5px 40px 10px 10px;
-        left: 0;
-        width: 100%;
-        font-size: 80%;
-    }
-    .map-info.active p{
-        display: block;
-    }
-    .map-info.active {
-        border: 0;
-    }
-    .map-info.active:before, .map-info.active:after {
-        content: none;
+    
+    .section-product .product-images {
+        width: 51%;
+        font-size: 72%;
     }
     
-    .qr-code {display: none;}
+    .section-features .feature {
+        width: 49%;
+    }
+    .section-features .feature:nth-of-type(1n+3) {
+        margin-top: 40px;
+    }
     
-    .map-info-container {
-        width: 100%;
+    .section-contacts .map { width: 68%; }
+    
+    .section-feedback .form {
+        right: 2%;
+        padding: 50px 8%;
+    }
+    .section-feedback .form input {
+        width: 270px;
     }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
 
 @media only screen and (max-width: 767px) {
-
+    
+    .row { padding: 0 5%; }
+    
     nav {
-        font-size: 140%;
-        font-weight: 500;
-        padding: 13.5px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+    }
+    nav .nav-body ul li { margin: 0; }
+    .section-main {
+        margin-top: 73px;
     }
     
-    nav .logo-transparent {
-        display: block;
-        float: left;
-        margin: 11.5px 0;
+    
+    nav .nav-phones, nav .social-icons, nav hr { 
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        display: none;
     }
+    
+    nav hr {
+        top: 250px;
+    }
+    
+    nav .nav-head .nav-phones {
+        top: 270px;
+    }
+    nav .social-icons {
+        top: 330px;
+    }
+    
+    nav .social-icons .social-icon {
+        height: 18px;
+    }
+    
+    nav .nav-head .nav-phones .phone {
+        display: block;
+        font-size: 90%;
+    }
+    nav .nav-head { padding: 20px 0; }
+    nav .nav-head .nav-logo {}
     .mobile-nav-icon {
         display: block;
         float: right;
     }
-    
-    nav .row , .nav-body { display: block; }
-    
-    .nav-body {
-        height: 100vh;
+    nav .nav-body { height: 100vh; display: none; }
+
+    .section-product .product-images {
         display: none;
     }
+    .section-product .product-info p { max-width: 1140px; padding-right: 10px;}
+    .section-product .product-info .btn-transparent { margin-top: 50px; }
     
-    nav ul { padding: 15px 0;}
-    nav ul li { padding-top: 10px; }
-    .nav-body div {
-        padding: 12px;
-        font-size: 100%;
+    .section-gallery a {
+        width: 49%;
+    }
+    .section-gallery a:nth-of-type(1n+3) {
+        margin-top: 2%;
     }
     
-    nav hr { display: block; }
+    .section-contacts .map { margin-top: 50px; width: 100%; height: 300px; }
     
-    nav .icon-phone {
-        height: 15px;
-        margin: 5px 8px;
+    .section-feedback .form {
+        right: 0;
+        margin-top: 50px;
+        padding: 50px 5%;
+        position: relative;
+    }
+    .section-feedback .form input {
+        width: 98.5%;
     }
     
-    .nav-body div a { font-size: 15px;}
+    .reviews.large-screen {
+      display: none;
+    }
+
+    .reviews.small-screen {
+      display: block;
+    }
     
     footer .row {
         display: block;
     }
     footer {
-        text-align: center;
+        text-align: left;
     }
-    .social-icons { margin: 15px;}
-    .logo-footer { margin-right: 0;}
-}
-
-@media only screen and (max-width: 575px) {
-    .quote-sign img { display: none;}
-
-    .quote-sign hr { display: none;}
-    .persons-review { font-size: 90%; }
-
-    .persons-img { margin-top: 20px; }
-    .map { height: 400px; }
+    footer .social-icons { margin: 25px 0;}
+    footer .social-icon:first-child { margin-left: 0;}
+    footer .logo-footer { margin-right: 0;}
 }
 
 /* Small phones: from 0 to 480px */
@@ -141,27 +146,26 @@
 @media only screen and (max-width: 480px) {
     h1 { font-size: 180%; }
     h2 { font-size: 130%; }
-    .feature .row {
-        display: block;
-        text-align: center;
-    }
-    .feature img { margin-bottom: 30px;}
-    .feature.grey img { 
-        margin-bottom: 0;
-        margin-top: 30px;
-    }
-    .feature .row div {margin-left: 0;}
-    .feature.grey .row div {margin-right: 0;}
     
-    .section-features button { padding-left: 10px; padding-right: 10px;}
+    .section-product .product-info p:last-child span { display: block; }
     
-    .map-mail {
-        text-align: center;
-        margin-left: 0;
+    .section-features .feature {
+        width: 100%;
+    }
+    .section-features .feature:nth-of-type(1n+2) {
+        margin-top: 40px;
     }
     
-    .inner-info-container {
-        top: 60px;
-        left: 10px;
+    .section-feedback .discount .discount-head {
+        font-size: 85%;
+    }
+
+    .section-feedback .discount img {
+        height: 35px;
+        margin-left: 20px;
+    }
+
+    .section-feedback .discount p {
+        font-size: 200%;
     }
 }  

@@ -1,15 +1,40 @@
 $(document).ready(function(){
     
-    $('.nav-body').waypoint(function(direction){
-        if (direction == "down") {
-            $('.nav-sticky').hide();
-            $( ".nav-sticky" ).slideDown( "slow", function() {
-                // Animation complete.
-              });
-        } else {
-            $('.nav-sticky').hide();
+    $('nav').waypoint(function(direction){
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            if (direction == "down") {
+                $('.nav-body').addClass('sticky');
+                $("nav hr").css( { marginBottom : "72px"} );
+                $( ".nav-body" ).hide();
+                $( ".nav-body" ).slideDown( "slow", function() {
+                    // Animation complete.
+                  });
+            } else {
+                $("nav hr").css( { marginBottom : "0"} );
+                $('.nav-body').removeClass('sticky');
+                $( ".nav-body" ).show();
+            }    
         }
+    }, {
+        offset: '-80px'
     });
+    /*
+    $(window).resize(function(){
+       if (window.matchMedia("(max-width: 768px)").matches) {
+            if (direction == "down") {
+                $('.nav-body').addClass('sticky');
+                $("nav hr").css( { marginBottom : "72px"} );
+                $( ".nav-body" ).hide();
+                $( ".nav-body" ).slideDown( "slow", function() {
+                    // Animation complete.
+                  });
+            } else {
+                $("nav hr").css( { marginBottom : "0"} );
+                $('.nav-body').removeClass('sticky');
+                $( ".nav-body" ).show();
+            }    
+        }
+    })*/ 
     
     //Gallery Popup
     $('.popup-gallery').magnificPopup({
@@ -37,6 +62,21 @@ $(document).ready(function(){
       .not('[href="#0"]')
     .not('[href="#carouselExampleIndicators"]')
       .click(function(event) {
+        if ($(window).width() < 768) {
+            var nav = $('.js--nav-body');
+            var icon = $('.js--nav-icon i')
+            nav.slideToggle(200);
+            $('nav .nav-phones').slideToggle(200);
+            $('nav .social-icons').slideToggle(200);
+            $('nav hr').slideToggle(200);
+            if (icon.hasClass('ion-navicon-round')) {
+                icon.addClass('ion-close-round');
+                icon.removeClass('ion-navicon-round');
+            } else {
+                icon.addClass('ion-navicon-round');
+                icon.removeClass('ion-close-round');
+            }
+        }
         // On-page links
         if (
           location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -48,7 +88,7 @@ $(document).ready(function(){
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
           // Does a scroll target exist?
           if (target.length) {
-            // Only prevent default if animation is actually gonna happen
+            // Only prevent default if animation is actually gonna happen   
             event.preventDefault();
             $('html, body').animate({
               scrollTop: target.offset().top -72
@@ -57,11 +97,30 @@ $(document).ready(function(){
           }
         }
       });
+    
+    /* Mobile Nav */
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--nav-body');
+        var icon = $('.js--nav-icon i');
+        
+        nav.slideToggle(200);
+        $('nav .nav-phones').slideToggle(200);
+        $('nav .social-icons').slideToggle(200);
+        $('nav hr').slideToggle(200);
+        
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }
+    })
 });
 
 var hero
     , sections = $('section')
-    , nav = $('.nav-sticky')
+    , nav = $('nav')
     , nav_height = nav.outerHeight();
 
 $(window).on('scroll', function () {
@@ -114,3 +173,16 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+
+$(window).on("resize", function () {
+    if ($(window).width() > 767) {
+        $('.js--nav-body').css('display','');
+    } 
+    else {
+        $('.js--nav-icon i').addClass('ion-navicon-round');
+        $('.js--nav-icon i').removeClass('ion-close-round');
+        $('.js--nav-body').removeClass('sticky');
+        $("nav hr").css( { marginBottom : "0"} );
+    }
+}).resize();
