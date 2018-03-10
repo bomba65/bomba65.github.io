@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php include('./component/head.html');?>
+    <?php include('./components/head.html');?>
     <body>
         <div class="main-container">
-            <?php include('./component/nav.html');?>
-            
+            <?php include('./components/nav.html');?>
+
             <hr>
-            
+
             <section class="section-technical-info">
                 <div class="row">
                     <div class="technical-nav">
@@ -20,7 +20,7 @@
                     </div>
                     <div class="technical-content">
                         <p class="technical-info-header">
-                            Технические характеристики <span>кабин</span> / <a href="./pannel.html">панелей</a>
+                            Технические характеристики <span>кабин</span> / <a href="./pannel.php">панелей</a>
                         </p>
                         <img src="resources/img/tech.pannel.png" alt="">
                         <div id="technical-data" class="technical-info">
@@ -164,9 +164,9 @@
                     </div>
                 </div>
             </section>
-                        
+
             <div class="row"><hr></div>
-            
+
             <footer>
                 <div class="row">
                     <img class="logo-footer" src="./resources/img/logo_black.png" alt="Logo footer">
@@ -181,7 +181,7 @@
                 </div>
             </footer>
         </div>
-        
+
         <div id="mainModal" class="popup">
             <div class="popup-container">
                 <span class="js--close-popup">
@@ -189,22 +189,22 @@
                 </span>
                 <h2>Оставьте заявку</h2>
                 <p>и получите консультацию</p>
-                
+
                 <label>Ваше имя</label>
                 <input type="text" placeholder="Александра">
                 <label>Номер телефона</label>
                 <input type="number" placeholder="+7 (702) 502-62-85">
-                
+
                 <button class="btn btn-primary">Отправить заявку</button>
             </div>
         </div>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
         <script src="vendors/js/bootstrap.min.js" ></script>
         <script src="vendors/js/jquery.waypoints.min.js" ></script>
         <script src="vendors/js/jquery.magnific-popup.min.js" ></script>
         <script src="resources/js/scripts.js"></script>
-        
+
     </body>
-    
+
 </html>

@@ -234,7 +234,7 @@ nav .nav-head .nav-phones .phone:last-of-type {
     margin-right: 0;
 }
 nav .nav-head .nav-phones .phone-number {
-    
+
 }
 nav .nav-head .nav-phones .phone-name {
     width: 70px;
@@ -339,11 +339,14 @@ nav .nav-body ul li {
     margin-top: 10px;
 }
 
-.section-product .product-info p:last-child span {
+.section-product .product-info p:last-child a {
     color: #F79016;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 90%;
+}
+.section-product .product-info p:last-child a:hover {
+  text-decoration: underline;
 }
 
 .section-product .product-info .btn-transparent {
@@ -372,7 +375,7 @@ nav .nav-body ul li {
     margin-top: 30px;
 }
 
-.section-product .product-image { 
+.section-product .product-image {
     width: 30%;
 }
 
@@ -407,7 +410,7 @@ nav .nav-body ul li {
 }
 
 .section-gallery {
-    
+
 }
 
 .section-gallery .popup-gallery {
@@ -454,7 +457,7 @@ nav .nav-body ul li {
 }
 
 .section-reviews {
-    
+
 }
 
 .section-reviews .reviews {
@@ -466,7 +469,7 @@ nav .nav-body ul li {
 .reviews.large-screen {
   display: block;
 }
- 
+
 .reviews.small-screen {
   display: none;
 }
@@ -492,7 +495,7 @@ nav .nav-body ul li {
 }
 
 .section-reviews .review .persons-review {
-    
+
 }
 
 .section-reviews .review .persons-img {
@@ -513,7 +516,7 @@ nav .nav-body ul li {
 }
 
 .section-contacts {
-    
+
 }
 
 .section-contacts .contacts {
@@ -573,7 +576,7 @@ nav .nav-body ul li {
 }
 
 .section-feedback .discount span {
-    
+
 }
 .section-feedback .discount .discount-head {
     color: #F79016;
@@ -677,7 +680,7 @@ nav .nav-body ul li {
     padding-left: 18px;
 }
 .technical-nav ul li a {
-    
+
 }
 
 
@@ -838,7 +841,7 @@ footer span {
     animation-duration: 1s;
 }
 
-.map-container { 
+.map-container {
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
 }

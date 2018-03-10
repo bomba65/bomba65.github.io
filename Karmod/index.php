@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php include('./component/head.html');?>
+    <?php include('./components/head.html');?>
     <body>
         <div class="main-container">
-            <?php include('./component/nav.html');?>
+            <?php include('./components/nav.html');?>
             <section id="section-main" class="section-main">
                 <div class="row">
                     <h1>Быстровозводмые сборные киоски и павильоны</h1>
@@ -11,17 +11,17 @@
                     <a href="#section-product" class="btn" role="button">Узнать подробнее</a>
                 </div>
             </section>
-            
+
             <section id="section-product" class="section-product clearfix">
                 <div class="row">
                     <div class="product-info">
                         <h2>Киоски и павильоны</h2>
                         <p>
-                            Наша система дополнительных пакетов и гибкая ежемесячная оплата позволяют смотреть только то, что вам действительно интересно!    
+                            Наша система дополнительных пакетов и гибкая ежемесячная оплата позволяют смотреть только то, что вам действительно интересно!
                         </p>
                         <a href="./resources/data/kp_blocks.pdf" class="btn btn-transparent" role="button" target="_blank">Ознакомиться с продукцией</a>
-                        
-                        <p>Подробнее узнать о <span>Технических характеристиках</span></p>
+
+                        <p>Подробнее узнать о <a href="./cabin.php">Технических характеристиках</a></p>
                     </div>
                     <div class="product-images">
                         <div class="product-image">
@@ -51,11 +51,11 @@
                     </div>
                 </div>
             </section>
-            
+
             <section id="section-features" class="section-features">
                 <div class="row">
                     <h2>Причины, почему наши клиенты остаются довольными</h2>
-                    
+
                     <div class="features">
                         <div class="feature">
                             <img src="./resources/icons/guarantee-certificate.svg" alt="Guarantee certificate">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section id="section-gallery" class="section-gallery">
                 <div class="row">
                     <div class="popup-gallery">
@@ -103,9 +103,9 @@
                     </div>
                 </div>
             </section>
-            
+
             <div class="row"><hr></div>
-            
+
             <section id="section-reviews" class="section-reviews">
                 <div class="row">
                     <h2>Благодарности наших клиентов</h2>
@@ -205,13 +205,13 @@
                     </div>
                 </div>
             </section>
-            
+
             <div class="row"><hr></div>
-            
+
             <section id="section-contacts" class="section-contacts">
                 <div class="row clearfix">
                     <h2>Наши контакты</h2>
-                    
+
                     <div class="contacts">
                         <div>
                             <p>Телефон</p>
@@ -228,13 +228,13 @@
                             <a href="https://yandex.ru/maps/?um=constructor%3Adf556a8c092f5ccccfc975c779f3558c2f52282dc01d55333a01506909253cfc&source=constructorLink" target="_blank">Казахстан, г. Алматы, ул. Муратбаева 94, кв.31</a>
                         </div>
                     </div>
-                    
+
                     <div class="map">
                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adf556a8c092f5ccccfc975c779f3558c2f52282dc01d55333a01506909253cfc&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                     </div>
                 </div>
             </section>
-            
+
             <section id="section-feedback" class="section-feedback">
                 <div class="row">
                     <h2>Обратная связь</h2>
@@ -246,7 +246,7 @@
                         <span>
                             <img class="persons-img" src="./resources/icons/discount.svg" alt="Discount">
                         </span>
-                        
+
                         <p id="discount-counter"></p>
                     </div>
                 </div>
@@ -265,9 +265,9 @@
                     </form>
                 </div>
             </section>
-            
+
             <div class="row"><hr></div>
-            
+
             <footer>
                 <div class="row">
                     <img class="logo-footer" src="./resources/img/logo_black.png" alt="Logo footer">
@@ -282,7 +282,7 @@
                 </div>
             </footer>
         </div>
-        
+
         <div id="mainModal" class="popup">
             <div class="popup-container">
                 <span class="js--close-popup">
@@ -290,22 +290,22 @@
                 </span>
                 <h2>Оставьте заявку</h2>
                 <p>и получите консультацию</p>
-                
+
                 <label>Ваше имя</label>
                 <input type="text" placeholder="Александра">
                 <label>Номер телефона</label>
                 <input type="number" placeholder="+7 (702) 502-62-85">
-                
+
                 <button class="btn btn-primary">Отправить заявку</button>
             </div>
         </div>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
         <script src="vendors/js/bootstrap.min.js" ></script>
         <script src="vendors/js/jquery.waypoints.min.js" ></script>
         <script src="vendors/js/jquery.magnific-popup.min.js" ></script>
         <script src="resources/js/scripts.js"></script>
-        
+
     </body>
-    
+
 </html>
