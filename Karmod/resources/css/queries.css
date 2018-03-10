@@ -14,6 +14,8 @@
 /* Small tablet to big tablets: from 768px to 1023px */
 
 @media only screen and (max-width: 1023px) {
+    
+    
     nav .social-icon:nth-of-type(2) {
         margin: 5px 5px;
     }
@@ -41,6 +43,8 @@
     .section-feedback .form input {
         width: 270px;
     }
+    
+    .technical-info-header {font-size: 120%;}
 }
 
 /* Small phones to small tablets: from 481px to 767px */
@@ -129,6 +133,12 @@
     .reviews.small-screen {
       display: block;
     }
+    
+    .section-technical-info { margin-top: 73px; }
+    .section-technical-info .row { padding: 0 5%; }
+    .technical-nav { display: none; }
+    .technical-info { max-width: 100%; }
+    .section-technical-info img {width: 100%;}
     
     footer .row {
         display: block;

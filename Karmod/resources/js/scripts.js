@@ -4,6 +4,7 @@ $(document).ready(function(){
         if (window.matchMedia("(min-width: 768px)").matches) {
             if (direction == "down") {
                 $('.nav-body').addClass('sticky');
+                $('.technical-nav ul').addClass('sticky');
                 $("nav hr").css( { marginBottom : "72px"} );
                 $( ".nav-body" ).hide();
                 $( ".nav-body" ).slideDown( "slow", function() {
@@ -11,6 +12,7 @@ $(document).ready(function(){
                   });
             } else {
                 $("nav hr").css( { marginBottom : "0"} );
+                $('.technical-nav ul').removeClass('sticky');
                 $('.nav-body').removeClass('sticky');
                 $( ".nav-body" ).show();
             }    
@@ -62,20 +64,16 @@ $(document).ready(function(){
       .not('[href="#0"]')
     .not('[href="#carouselExampleIndicators"]')
       .click(function(event) {
+        
         if ($(window).width() < 768) {
             var nav = $('.js--nav-body');
             var icon = $('.js--nav-icon i')
-            nav.slideToggle(200);
-            $('nav .nav-phones').slideToggle(200);
-            $('nav .social-icons').slideToggle(200);
-            $('nav hr').slideToggle(200);
-            if (icon.hasClass('ion-navicon-round')) {
-                icon.addClass('ion-close-round');
-                icon.removeClass('ion-navicon-round');
-            } else {
-                icon.addClass('ion-navicon-round');
-                icon.removeClass('ion-close-round');
-            }
+            nav.slideUp(200);
+            $('nav .nav-phones').slideUp(200);
+            $('nav .social-icons').slideUp(200);
+            $('nav hr').slideUp(200);
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
         }
         // On-page links
         if (
@@ -121,7 +119,7 @@ $(document).ready(function(){
 var hero
     , sections = $('section')
     , nav = $('nav')
-    , nav_height = nav.outerHeight();
+    , nav_height = nav.outerHeight()
 
 $(window).on('scroll', function () {
   var cur_pos = $(this).scrollTop();
@@ -135,7 +133,29 @@ $(window).on('scroll', function () {
       sections.removeClass('active');
       
       $(this).addClass('active');
-      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      nav.find('a[href="./index.html#'+$(this).attr('id')+'"]').addClass('active');
+    }
+  });
+});
+
+var hero1
+    , sections1 = $('.technical-info')
+    , nav1 = $('nav')
+    , nav_height1 = nav1.outerHeight()
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+  
+  sections1.each(function() {
+    var top = $(this).offset().top - nav_height1,
+        bottom = top + $(this).outerHeight();
+    
+    if (cur_pos >= top && cur_pos <= bottom) {
+      $('.technical-nav').find('a').parent().removeClass('active');
+      sections1.removeClass('active');
+      
+      $(this).addClass('active');
+      $('.technical-nav').find('a[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
     }
   });
 });
@@ -143,7 +163,8 @@ $(window).on('scroll', function () {
 
 // Set the date we're counting down to
 var countDownDate = new Date("May 5, 2018 15:37:25").getTime();
-
+if(document.getElementById("discount-counter")) {
+    
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -173,7 +194,7 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
-
+}
 
 $(window).on("resize", function () {
     if ($(window).width() > 767) {
