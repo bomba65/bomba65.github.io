@@ -261,6 +261,7 @@ nav hr { display: none; }
 
 .service img {
     margin-bottom: 20px;
+    height: 60px;
 }
 
 .service ul {
