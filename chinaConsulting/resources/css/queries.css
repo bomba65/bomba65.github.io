@@ -115,6 +115,8 @@
     
     .nav-body div a { font-size: 15px;}
     
+    .whats_tel { display: block; }
+    
     footer .row {
         display: block;
     }
