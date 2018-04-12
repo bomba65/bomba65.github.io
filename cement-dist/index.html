@@ -57,7 +57,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <button class="btn btn-transparent border-200" type="button" name="button">Заказать звонок</button>
+                <button class="btn btn-transparent border-200" onclick="showFeedbackPopup()" type="button" name="button">Заказать звонок</button>
               </li>
             </ul>
           </div>
@@ -69,7 +69,7 @@
           <h1>Цемент европейского качества от производителей</h1>
           <p class="under-heading-p">
             Заполните форму для бесплатной консультации. Мы свяжемся с вами, и
-ответим на все ваши вопросы о нашей продукции и услуг
+ответим на все ваши вопросы о нашей продукции и услугах
           </p>
           <form method="post">
             <input class="input-transparent input-name" type="text" name="name" placeholder="Ваше имя" required>
@@ -147,7 +147,7 @@
             </div>
           </div>
 
-          <button class="btn btn-blue" onclick="feedbackModal()" type="button" name="button">Приобрести цемент</button>
+          <button class="btn btn-blue" onclick="showFeedbackPopup()" type="button" name="button">Приобрести цемент</button>
         </div>
       </section>
 
@@ -181,7 +181,7 @@
             </div>
           </div>
 
-          <button class="btn btn-blue" onclick="feedbackModal()" type="button" name="button">Получить консультацию</button>
+          <button class="btn btn-blue" onclick="showFeedbackPopup()" type="button" name="button">Получить консультацию</button>
         </div>
       </section>
 
@@ -195,7 +195,7 @@
             <div class="contacts col-md-4">
               <div class="contact">
                 <span class="icomoon icon-phone"></span>
-                <h3>Звоните на в любое время</h3>
+                <h3>Звоните нам в любое время</h3>
                 <a href="tel:8 (702) 502 62 85">8 (702) 502 62 85</a>
               </div>
               <div class="contact">
@@ -253,10 +253,10 @@
     </div>
 
     <div id="feedback-modal" class="popup">
-        <div class="popup-container">
-            <div class="close-popup"></div>
+        <div id="modal-form" class="popup-container">
+            <span class="close-popup icomoon icon-cancel"></span>
             <h2>Оставьте заявку</h2>
-            <p>и получите бесплатную консультацию</p>
+            <p class="under-heading-p">Мы свяжемся с вами, и ответим на все ваши вопросы о нашей продукции и услуг</p>
             <form method="post">
               <input class="input-transparent input-name" type="text" name="name" placeholder="Ваше имя" required>
 
@@ -264,6 +264,29 @@
 
               <button class="btn btn-blue" type="submit">Оформить заказ</button>
             </form>
+        </div>
+        <div id="modal-thanks" class="popup-container">
+            <span class="close-popup icomoon icon-cancel"></span>
+            <h2>Благодарим вас!</h2>
+            <p class="under-heading-p">Ожидайте звонка от менеджера, в ближайшее время с вами свяжутся</p>
+            <a href="tel:8 727 291 01 62">
+              <div class="row">
+                <span class="icomoon icon-call"></span>
+                <div class="nav-call">
+                  <p class="">
+                    8 (727) 291-01-62
+                  </p>
+                  <p>
+                    Звонки по Казахстану
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <button class="btn btn-transparent" type="submit">Вернуться на главную</button>
+        </div>
+        <div class="">
+
         </div>
     </div>
 
