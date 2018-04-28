@@ -55,7 +55,7 @@
               </ul>
               <ul class="navbar-nav nav-calls">
                 <li class="nav-item">
-                  <button class="btn btn-red" type="button" name="button"><span class="icomoon icon-headphones"></span>Получить консультацию</button>
+                  <button class="btn btn-red" type="button" name="button" data-toggle="modal" data-target="#callbackModal"><span class="icomoon icon-headphones"></span>Получить консультацию</button>
                 </li>
               </ul>
             </div>
@@ -73,7 +73,7 @@
               У нас лечатся члены правительства КНР.
             </p>
 
-            <button class="btn btn-red" type="button" name="button">Получить консультацию</button>
+            <button class="btn btn-red" type="button" name="button" data-toggle="modal" data-target="#callbackModal">Получить консультацию</button>
           </div>
         </section>
         <hr>
@@ -118,7 +118,7 @@
                 <div><span class="font-bold">Результат:</span> <p> Полностью отказался от инсулина. Чувствует себя хорошо. Уровень глюкозы в крови стабилизировался.</p></div>
               </div>
 
-              <button class="btn btn-red" type="button" name="button">Получить консультацию</button>
+              <button class="btn btn-red" type="button" name="button" data-toggle="modal" data-target="#callbackModal">Получить консультацию</button>
             </div>
             <div class="third-img">
 
@@ -134,11 +134,11 @@
                 <p>В нашу клинику обращаются известные политики и звезды шоу-бизнеса Китая.</p>
               </div>
               <div class="col-md-4">
-                <span class="icomoon icon-6"></span>
+                <span class="icomoon icon-tick"></span>
                 <p>Практически все пациенты остаются довольны результатом.</p>
               </div>
               <div class="col-md-4">
-                <span class="icomoon icon-6"></span>
+                <span class="icomoon icon-quotation-mark"></span>
                 <p>До 80% пациентов обращаются в клинику JENSIN по рекомендации родных и друзей.</p>
               </div>
             </div>
@@ -241,7 +241,7 @@
                 <p>Правильное питание, физическая активность – важные составляющие эффективного лечения.</p>
               </div>
             </div>
-            <button class="btn btn-red" type="button" name="button">Получить консультацию</button>
+            <button class="btn btn-red" type="button" name="button" data-toggle="modal" data-target="#callbackModal">Получить консультацию</button>
           </div>
         </section>
 
@@ -292,7 +292,7 @@
               </li>
             </ul>
 
-            <button class="btn btn-red mx-auto" type="button" name="button">Получить консультацию</button>
+            <button class="btn btn-red mx-auto" type="button" name="button" data-toggle="modal" data-target="#callbackModal">Получить консультацию</button>
           </div>
         </section>
 
@@ -470,7 +470,7 @@
                 </div>
               </div>
             </div>
-            <button class="btn btn-red mx-auto" type="button" name="button">Записаться на прием</button>
+            <button class="btn btn-red mx-auto" type="button" name="button" data-toggle="modal" data-target="#callbackModal">Записаться на прием</button>
           </div>
         </section>
 
@@ -595,14 +595,14 @@
               <li class="col-md-4"><p>Вернуться к полноценной жизни.</p></li>
             </ul>
 
-            <form>
+            <form class="callbackForm">
               <div>
                 <label for="name">Имя</label>
-                <input class="input-transparent" type="text" name="name" placeholder="Введите ваше имя">
+                <input class="input-transparent" type="text" name="name" placeholder="Введите ваше имя" required>
               </div>
               <div>
                 <label for="phone">Номер телефона</label>
-                <input class="input-transparent" type="text" name="phone" placeholder="Введите номер телефона">
+                <input class="input-transparent" type="text" name="phone" placeholder="Введите номер телефона" required>
               </div>
 
               <button class="btn btn-red" type="submit" name="button">Получить консультацию</button>
@@ -638,6 +638,56 @@
           </div>
         </footer>
 
+      </div>
+
+      <div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-form" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <h2 class="modal-title">Оставьте заявку</h2>
+                      <p class="modal-title-under text-center">
+                        Наши менеджеры проконсультируют вас.
+
+                        Бесплатно. В ближайшее время.
+                      </p>
+
+                      <button type="button" class="close modal-closer" style="font-size: 1.6rem;line-height: 4.6rem;" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">
+                              <span class="modal-close"></span>
+                          </span>
+                      </button>
+
+                      <form id="callbackForm" class="row">
+                          <div class="form-group col-md-12">
+                              <label for="name">Имя:</label>
+                              <input type="text" required name="name" id="name" placeholder="Введите имя">
+                          </div>
+                          <div class="form-group col-md-12">
+                              <label for="phone">Номер телефона:</label>
+                              <input type="text" required name="phone" id="phone" placeholder="Введите номер телефона">
+                          </div>
+                          <div class="col-md-12">
+                              <button type="submit" class="btn btn-red mx-auto ajax-status">Оставить заявку</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-dialog modal-thanks" style="display: none" role="document">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <h2 class="modal-title">
+                          Большое спасибо!<br>
+                          Ваша заявка принята
+                      </h2>
+                      <button type="button" class="close modal-closer" style="font-size: 1.6rem;line-height: 4.6rem;" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">
+                              <span class="modal-close"></span>
+                          </span>
+                      </button>
+                  </div>
+              </div>
+          </div>
       </div>
 
     <!-- build:js -->
