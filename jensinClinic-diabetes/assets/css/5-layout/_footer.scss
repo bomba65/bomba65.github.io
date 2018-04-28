@@ -1,0 +1,72 @@
+footer {
+  padding: 7rem 0;
+  background: $bg-gray;
+  font-size: 1.4rem;
+  color: #fff;
+  line-height: 1.8rem;
+
+  .footer-logo {
+    height: 4rem;
+  }
+  .footer-logo-text {
+    margin-left: 6rem;
+    display: inline-block;
+    max-width: 30rem;
+    @include media-breakpoint-down(xs) {
+      margin-top: 3rem;
+      margin-left: 0;
+      display: block;
+    }
+  }
+  .footer-about-text {
+    color: $gray;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    max-width: 60rem;
+  }
+
+  .footer-rights {
+    margin-top: 3rem;
+  }
+
+  .contacts {
+    width: 30rem;
+    height: 15rem;
+    margin-top: 5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url($path-image + "/world-map.png");
+    p:first-child {
+      max-width: 20rem;
+      margin-bottom: 3rem;
+      span {
+        font-weight: 500;
+        display: block;
+      }
+    }
+
+    a {
+      color: #fff;
+      display: block;
+      margin-top: 0.5rem;
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .contacts {
+      float: right;
+      margin-right: 5%;
+      margin-top: 0;
+    }
+
+    .footer-no-contacts {
+      float: left;
+    }
+  }
+
+}

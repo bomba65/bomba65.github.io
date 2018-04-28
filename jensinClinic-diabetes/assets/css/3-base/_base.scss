@@ -1,0 +1,221 @@
+/* Base Styles -------------------- */
+
+html {
+  font-size: 10px;
+}
+body {
+  color: #000;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-family: 'helveticaneue', sans-serif;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.8rem;
+  }
+}
+
+.container {
+  max-width: 1240px;
+  overflow: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    height: 0;
+    clear: both;
+    content: '.';
+    display: block;
+    visibility: hidden;
+}
+
+section {
+  padding: 14rem 0;
+  @include media-breakpoint-down(sm) {
+    padding: 7rem 0;
+  }
+}
+
+/* REUSABLE COMPONENTS */
+
+.main-container {
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+hr { margin: 0; }
+
+
+a {
+    color: #666;
+    transition: color 0.3s;
+}
+
+a.active {
+    color: #000;
+}
+
+a:hover {
+    color: $red;
+    text-decoration: none;
+}
+
+/* HEADINGS */
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    @include media-breakpoint-down(sm) {
+      font-size: 2.5rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    @include media-breakpoint-down(sm) {
+      font-size: 1.8rem;
+    }
+}
+
+.under-h2 {
+  margin: 1rem auto 7rem;
+  max-width: 82rem;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 4.5rem;
+  }
+}
+
+.red {
+  color: $red;
+}
+.font-24 {
+  font-size: 2.4rem;
+  @include media-breakpoint-down(sm) {
+    font-size: 1.8rem;
+  }
+}
+.font-bold {
+  font-weight: bold;
+}
+
+/* Inputs */
+
+input {
+  color: #fff;
+  width: 30rem;
+  display: block;
+  font-size: 16px;
+  padding: 0.8rem 2rem;
+  border-radius: 20rem;
+  border: 1px solid #fff;
+  transition: border-color 150ms;
+  @include media-breakpoint-down(xs) {
+    width: 28rem;
+  }
+}
+input:focus {
+   outline: none;
+}
+label {
+  font-size: 1.6rem;
+}
+
+.input-transparent {
+  background-color: transparent;
+}
+
+::placeholder {
+    color: rgba(#fff, 0.7);
+    opacity: 1;
+}
+
+/* BUTTONS */
+
+.btn {
+  width: 30rem;
+  display: block;
+  font-size: 1.8rem;
+  border-radius: 200px;
+  padding: 1.2rem 1rem;
+  @include media-breakpoint-down(xs) {
+    width: 28rem;
+  }
+}
+
+.btn-red {
+  border: 0;
+  color: #fff;
+  background-color: $red;
+}
+
+.btn-red:hover {
+  background-color: $dark-red;
+}
+
+/* ----- FONTS ----- */
+
+//Montserrat - Regular (400)
+@font-face {
+  font-family: 'helveticaneue';
+  src: url($path-fonts + '/helveticaneue/HelveticaNeue-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+//Montserrat - Light (300)
+@font-face {
+  font-family: 'helveticaneue';
+  src: url($path-fonts + '/helveticaneue/HelveticaNeue-Thin.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+//Montserrat - Normal Italic (400)
+@font-face {
+  font-family: 'helveticaneue';
+  src: url($path-fonts + '/helveticaneue/HelveticaNeueIt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+//Montserrat - Medium (500)
+@font-face {
+  font-family: 'helveticaneue';
+  src: url($path-fonts + '/helveticaneue/HelveticaNeue-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+//Montserrat - Bold (700)
+@font-face {
+  font-family: 'helveticaneue';
+  src: url($path-fonts + '/helveticaneue/Helvetica-Neu-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url($path-fonts + '/icons/icomoon.eot?l88ukv');
+  src:  url($path-fonts + '/icons/icomoon.eot?l88ukv#iefix') format('embedded-opentype'),
+    url($path-fonts + '/icons/icomoon.ttf?l88ukv') format('truetype'),
+    url($path-fonts + '/icons/icomoon.woff?l88ukv') format('woff'),
+    url($path-fonts + '/icons/icomoon.svg?l88ukv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@import "../../fonts/icons/icomoon";
